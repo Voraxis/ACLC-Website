@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACLC College of Commonwealth</title>
+    <link rel="icon" href="./ACLC logo.jfif">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: url('./back.jpg') no-repeat center/cover fixed;
+            color: white;
+        }
+
+        @media screen and (min-width: 480px) {
+            body {
+                background-color: lightgreen;
+            }
+        }
+
+        /* NAVBAR */
+        nav {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            background: rgb(255, 255, 255);
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 40px;
+            z-index: 1000;
+        }
+
+        /*background: rgba(0, 0, 80, 0.7);*/
+
+        nav img {
+            height: 50px;
+        }
+
+        nav a {
+            color: black;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff0000;
+            /*#ff4d4d*/
+        }
+
+        /* HERO */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        @-webkit-keyframes glow {
+            50% {
+                text-shadow: 0 0 10px #fff;
+            }
+
+            to {
+                text-shadow: 0 0 20px #fff;
+            }
+        }
+
+        .hero h1 {
+            font-size: 5rem;
+            margin-bottom: 10px;
+            animation: glow 1s ease-in-out infinite alternate;
+        }
+
+        .hero p {
+            font-size: 2.4rem;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            background: #ff4d4d;
+            border: none;
+            border-radius: 30px;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #ff1a1a;
+        }
+
+        /* SECTION */
+        .section {
+            padding: 80px 10%;
+            background: rgba(35, 65, 117, 0.85);
+        }
+
+        #section {
+            padding: 80px 10%;
+            background: rgba(35, 65, 117, 0.85);
+            border-radius: 250px;
+        }
+
+        .section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 20px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 15px;
+        }
+
+        /* VIDEOS */
+        .video-section {
+            padding: 80px 10%;
+            background: rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        video {
+            width: 100%;
+            border-radius: 15px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: rgba(63, 129, 173, 0.39);
+            text-align: center;
+            padding: 15px;
+            border-style: inset;
+            backdrop-filter: blur(15px);
+        }
+
+
+
+        h3 {
+            text-align: center;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        #whychu {
+            font-size: 2.4em;
+        }
+
+        #pchu {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <img src="./ACLC nav.png">
+        <div>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="Contacts.html">Contact</a>
+            <a href="news.html">News</a>
+            <a href="offers.html">Offers</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div id="section">
+        <h1>ACLC College of Commonwealth</h1>
+        <p>Study While Working • BSENTREP • BSIS</p>
+        <p>Enrollment Ongoing S.Y. 2026-2027</p>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section">
+        <h2 id="whychu">Why Choose ACLC?</h2>
+        <div class="cards">
+            <div class="card">
+                <h3 id="whychu">Flexible Learning</h3>
+                <p id="pchu">Study while working with flexible schedules.</p>
+            </div>
+            <div class="card">
+                <h3 id="whychu">Modern Facilities</h3>
+                <p id="pchu">Fully air-conditioned classrooms.</p>
+            </div>
+            <div class="card">
+                <h3 id="whychu">Free SHS</h3>
+                <p id="pchu">No tuition & no hidden fees for eligible students.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- VIDEOS -->
+    <section class="video-section">
+        <h2 id="whychu">Student Highlights</h2>
+        <div class="video-grid">
+            <video controls src="./VIDEOS/Crush 1.MOV"></video>
+            <video controls src="./VIDEOS/Crush 2.MOV"></video>
+            <video controls src="./VIDEOS/Masquerade PROM.MOV"></video>
+        </div>
+    </section>
+
+    <!-- NEWS -->
+    <section class="section">
+        <h2 id="whychu">Latest Updates</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="./PICTURES/Women's Month.jpg">
+                <h3 id="whychu">Women's Month</h3>
+                <p id="pchu">Celebrating equality and empowerment.</p>
+            </div>
+            <div class="card">
+                <img src="./PICTURES/Stay Hydrated.jpg">
+                <h3 id="whychu">Summer Reminder</h3>
+                <p id="pchu">Stay hydrated and safe this summer.</p>
+                <p id="pchu">Don't let the heat get you down. Make sure to drink plenty of water and pack our
+                    summer
+                    essentials to beat the heat</p>
+                <p id="pchu">#stayhydrated #beattheheat #summervibes <br>
+                    #AirConditionedClassrooms <br>
+                    #ChooseToBeTheBest <br>
+                    #CHOOSEACLC <br>
+                    #EnrollNow</p>
+            </div>
+            <div class="card">
+                <img src="./PICTURES/Linda Walker.jpg">
+                <h3 id="whychu">Top Student</h3>
+                <p id="pchu">Gusto mo bang maging kasing-talino ni <b>Linda Walker</b>? 🧠✨</p>
+                <p id="pchu">If she can score a <b>Total Mock Exam</b> = 719, imagine what YOU can do!
+                    Si Linda, hindi lang basta-basta nag-aaral, pumili siya ng <b>school</b> na match sa galing
+                    niya. She is now officially enrolled at ACLC College of Commonwealth</p>
+            </div>
+            <div class="card">
+                <img src="./PICTURES/Teachers and Higher Ups/Visit.jpg">
+                <h3 id="whychu">School Monitoring Visit</h3>
+                <p id="pchu">
+                    Thank you for visiting us, Dr. Ludevina Bruan, Public Schools District Supervisor
+                    from the Schools Division Office of Quezon City.
+                </p>
+
+                <p id="pchu">
+                    She conducted a monitoring visit on the administration of the Senior High School
+                    Literacy and Numeracy Assessment.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <br><br><br>
+
+    <!-- ENROLLMENT SECTION -->
+    <section class="section" id="enroll"
+        style="background:linear-gradient(rgba(35,65,117,0.95), rgba(0,0,0,0.9)); text-align:center;">
+        <h2 style="margin-bottom:20px;" id="whychu">🎓 FREE AMA Senior High Enrollment</h2>
+        <p style="max-width:800px; margin:0 auto 20px; line-height:1.6;" id="pchu">
+            ACLC College of Commonwealth offers <b>100% FREE Tuition & Miscellaneous Fees</b> for incoming Grade 11
+            students from public schools under the DepEd Voucher Program (S.Y. 2026-2027).
+        </p>
+
+        <div class="cards">
+            <div class="card">
+                <h3 id="whychu">✔ No Hidden Costs</h3>
+                <p id="pchu">No top-up, no entrance exam, no grade requirement.</p>
+            </div>
+            <div class="card">
+                <h3 id="whychu">❄ Comfortable Learning</h3>
+                <p id="pchu">Fully air-conditioned rooms with flexible schedules.</p>
+            </div>
+            <div class="card">
+                <h3 id="whychu">📚 Student-Friendly</h3>
+                <p id="pchu">No books required and easy enrollment process.</p>
+            </div>
+        </div>
+
+        <br>
+
+        <img src="./PICTURES/Enrollment 1.jpg" style="width:60%; border-radius:20px; margin:20px 0;">
+
+
+        <p style="margin-top:20px; line-height:1.6;" id="pchu">
+            📍 Lirio 1 Bldg., Commonwealth Ave., QC (near Landbank / Ever Gotesco)<br>
+            🕒 Open: Monday-Saturday, 8:00 AM - 5:00 PM<br>
+            📩 Message us on Facebook for inquiries
+        </p>
+    </section>
+    <footer>
+        © 2026 ACLC College of Commonwealth | Choose To Be The Best
+    </footer>
+
+</body>
+
+</html>

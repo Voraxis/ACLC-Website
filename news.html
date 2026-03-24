@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEWS - ACLC College of Commonwealth</title>
+    <link rel="icon" href="./ACLC logo.jfif">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: url('./back.jpg') no-repeat center/cover fixed;
+            color: white;
+        }
+
+        @media screen and (min-width: 480px) {
+            body {
+                background-color: lightgreen;
+            }
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* NAVBAR */
+        nav {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            background: white;
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 40px;
+            z-index: 1000;
+        }
+
+        nav img {
+            height: 50px;
+        }
+
+        nav a {
+            color: black;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff0000;
+        }
+
+        /* CONTAINER */
+        .container {
+            background: rgba(35, 65, 117, 0.85);
+            margin: 120px auto 40px;
+            padding: 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            max-width: 1000px;
+        }
+
+        h1,
+        h2,
+        p {
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        #themes {
+            text-align: center;
+            font-size: 2.4em;
+        }
+
+        /* GO BACK UP BUTTON */
+        #goingup {
+            text-align: center;
+        }
+
+        #goingup a {
+            padding: 10px 20px;
+            background: #ff4d4d;
+            border-radius: 25px;
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        #goingup a:hover {
+            background: #ff1a1a;
+        }
+
+        /* FOOTER */
+        footer {
+            background: rgba(63, 129, 173, 0.39);
+            text-align: center;
+            padding: 15px;
+            border-style: inset;
+            backdrop-filter: blur(15px);
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        #whychu {
+            font-size: 2.4em;
+        }
+
+        #pchu {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav id="section1">
+        <img src="./ACLC nav.png" alt="ACLC Logo">
+        <div>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="Contacts.html">Contact</a>
+            <a href="news.html">News</a>
+            <a href="offers.html">Offers</a>
+        </div>
+    </nav>
+
+
+    <!-- CONTENT -->
+    <div class="hero">
+        <h1 id="themes">ACLC (AMA Computer Learning Center) News</h1>
+        <p id="pchu">News primarily revolves around enrollment promotions, discounts (like 45% off for late 2025/early 2026),
+            new programs (Tech-Voc, IT, Business), campus activities, and success stories within the AMA Education
+            System (AMAES) network, focusing on practical, IT-based education for high school grads and working
+            professionals in the Philippines.</p>
+
+        <h2 id="themes"><b>Enrollment Perks</b>: Offers like significant tuition discounts (e.g., 45% off at end of
+            2025) for various programs (College, Grad Studies) are common.</h2>
+
+        <h2 id="themes"><b>Program Focus</b>: Strong emphasis on IT-related courses (Computer Science, ICT,
+            Animation) and Business/Accounting fields.</h2>
+
+        <h2 id="themes"><b>Flexibility</b>: Options for virtual, on-campus, day, and night classes to suit
+            different lifestyles.</h2>
+
+        <h2 id="themes"><b>Community & Events</b>: Updates on campus life, cultural events (like global appreciation
+            festivals), and achievements of alumni.</h2>
+
+        <h2>Where to Find ACLC News:</h2>
+        <h2><b>Official Website</b>: aclc.edu.ph for general info and programs.</h2>
+        <h2><b>Facebook</b>: Search for "ACLC College Official," "ACLC Malolos," etc., for real-time updates.</h2>
+        <h2><b>YouTube</b>: For TV ads and highlights.</h2>
+        <h2><b>AMAES News Portal</b>: For official system-wide announcements.</h2>
+
+    </div>
+
+    <footer>
+        © 2026 ACLC College of Commonwealth | Choose To Be The Best
+    </footer>
+
+</body>
+
+</html>
